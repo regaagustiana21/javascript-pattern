@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>115</title>
+  </head>
+  <body>
+    <script>
+      let n = 5;
+      for (let i = n; i >= 1; i--) {
+        for (let j = i; j > 1; j--) {
+          document.write('&nbsp;&nbsp;&nbsp;');
+        }
+        for (let k = i; k <= n; k++) {
+          document.write(String.fromCharCode(k + 64) + '&nbsp;');
+        }
+        document.write('<br>');
+      }
+    </script>
+  </body>
+</html>

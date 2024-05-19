@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>169</title>
+  </head>
+  <body>
+    <script>
+      let tinggi = 5;
+      let s = tinggi * 2 - 1;
+      let jarak = tinggi - 1;
+
+      for (let i = tinggi -1; i >= 0; i--) {
+        for (let j = jarak ; j >= i; j--) {
+          document.writeln('&nbsp&nbsp&nbsp');
+        }
+        for (let k = 0; k < s; k++) {
+          document.writeln((String.fromCharCode)(k + 65));
+        }
+        s -= 2;
+        document.writeln('<br>');
+      }
+    </script>
+  </body>
+</html>

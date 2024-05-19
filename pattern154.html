@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>154</title>
+</head>
+<body>
+    <script>
+        let i; 
+        let j;
+        let k = 1;
+        let n = 3;
+        let x = 1;
+        let z;
+        let g;
+
+        for(i = 0; i < n; i++){
+            for( z = n - 1; z >= i; z--){
+                document.writeln('&nbsp&nbsp&nbsp');
+            }
+            for(j = 0; j < k; j++){
+                if(i == j){
+                    g = (x + 1) * ( j + j );
+                    g = (g == 0)?1:g;
+                    document.writeln("&nbsp" + g);
+                    continue;
+                }
+                x+= 2;
+                document.writeln(" " + x);
+
+                }
+                k += 2;
+                document.writeln("<br>");
+            }
+    </script>
+</body>
+</html>

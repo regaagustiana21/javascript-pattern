@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>139</title>
+</head>
+<body>
+    <script>
+        let bintang = 1;
+        let tinggi = 5;
+        let jarak = tinggi - 1;
+
+        for(let i = 0; i < tinggi; i++){
+            for(let j = jarak; j > i; j--){
+                document.writeln("&nbsp&nbsp");
+            }
+            for(let k = 0; k < bintang; k++){
+                document.writeln("*");
+            }
+            bintang += 2;
+            document.writeln("<br>");
+        }
+
+    </script>
+</body>
+</html>

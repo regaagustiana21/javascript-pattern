@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>166</title>
+</head>
+<body>
+    <script>
+        let tinggi = 5;
+        let s = tinggi*2-1;
+        let jarak = tinggi - 1;
+
+        for(let i = tinggi; i >= 1; i--){
+            for(let j = jarak;j >= i; j--){
+                document.writeln("&nbsp&nbsp");
+            }
+            for(let k = 1; k <= s; k++){
+                document.writeln(k);
+            }
+            s-= 2;
+            document.writeln("<br>");
+        }
+    </script>
+</body>
+</html>

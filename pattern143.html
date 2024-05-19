@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>144</title>
+  </head>
+  <body>
+    <script>
+      let n = 5; //ukuran
+      let z = 1;
+
+      for (let i = 1; i <= n; i++) {
+        for (let j = n - 1; j >= i; j--) {
+          document.writeln('&nbsp&nbsp');
+        }
+        for (let k = z; k >= 1; k--) {
+          document.writeln(k);
+        }
+        z += 2;
+        document.writeln('<br>');
+      }
+    </script>
+  </body>
+</html>

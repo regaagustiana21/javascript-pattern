@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>162</title>
+</head>
+<body>
+    <script>
+        let n = 5;
+        let z = 0;
+
+        for(let i = 1; i <= n; i++){
+            for(let j = n; j >= i; j--){
+                document.writeln("&nbsp&nbsp&nbsp");
+            }
+
+            for(let k = i - 1; k >= -(i - 1); k--){
+                document.writeln((String.fromCharCode)(z - Math.abs(k) + 65));
+            }
+            z += 2;
+            document.writeln("<br>");
+        }
+    </script>
+</body>
+</html>

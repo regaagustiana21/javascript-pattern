@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>160</title>
+  </head>
+  <body>
+    <h1>160 pattern</h1>
+    <script>
+      let n = 5;
+      let z = 1;
+      let l = 1;
+      let i;
+      let j;
+      let k;
+
+      for (i = 0; i < 5; i++) {
+        for (j = 4; j > i; j--) {
+          document.writeln('&nbsp&nbsp');
+        }
+        for (k = 1; k <= z; k++) {
+          document.writeln(String.fromCharCode(Math.abs(k - l) + 65));
+        }
+        l++;
+        z += 2;
+        document.writeln('<br>');
+      }
+    </script>
+  </body>
+</html>

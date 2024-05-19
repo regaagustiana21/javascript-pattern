@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>134</title>
+  </head>
+  <body>
+    <script>
+      let tinggi = 5;
+      for (let i = tinggi; i >= 1; i--) {
+        for (let k = tinggi - 1; k >= i; k--) {
+          document.writeln('&nbsp');
+        }
+        for (let j = i; j >= 1; j--) {
+          document.writeln(i, '&nbsp');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+  </body>
+</html>

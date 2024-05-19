@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>105</title>
+</head>
+<body>
+    <script>
+        let n = 4;
+        let x = 1;
+
+        for(let i = 1; i <= n; i++){
+            for(let j = n; j >= 1; j--){
+                if(i >= j){
+                    document.writeln(' ', (x * x))
+                    x++;
+                }else{
+                    document.write("&nbsp&nbsp&nbsp&nbsp&nbsp");
+                }
+            }
+            document.writeln("<br>");
+        }
+    </script>
+</body>
+</html>

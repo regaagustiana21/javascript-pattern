@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 101</title>
+  </head>
+  <body>
+    <script>
+      let n = 5;
+      let x = 2;
+      let output = "";
+
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
+          output += "   ";
+        }
+        for(let k = 0; k <= i; k++){
+          output += (x < 10 ? " " : "") + x + " ";
+          x += 2;
+        }
+        output += "\n";
+      }
+      document.write("<pre>" + output + "</pre>");
+    </script>
+  </body>
+</html>

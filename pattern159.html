@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>159</title>
+  </head>
+  <body>
+    <script>
+      let n = 5;
+      let z = 0;
+      let i;
+      let j;
+      let k;
+
+      for (i = 0; i < n; i++) {
+        for (j = n - 1; j > i; j--) {
+          document.writeln('&nbsp&nbsp');
+        }
+        for (k = 0; k <= z; k++) {
+          document.writeln(String.fromCharCode(z - k + 65));
+        }
+        z += 2;
+        document.writeln('<br>');
+      }
+    </script>
+  </body>
+</html>

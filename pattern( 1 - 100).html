@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rega Agustiana</title>
+  </head>
+  <body>
+    <h1>Hasil Pattern Js (1)</h1>
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+          document.write('*');
+        }
+        document.write('<br>');
+      }
+    </script>
+    <br />
+    <h1>Hasil Pattern Js (2)</h1>
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+          document.write(i);
+        }
+        document.write('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (3)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+          document.writeln(j);
+        }
+        document.write('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (4)</h1>
+    <br />
+    <script>
+      for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= 5; j++) {
+          document.writeln(i);
+        }
+        document.write('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (5)</h1>
+    <br />
+    <script>
+      for (let i = 5; i >= 1; i--) {
+        for (let j = 5; j >= 1; j--) {
+          document.writeln(j);
+        }
+        document.write('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (6)</h1>
+    <br />
+    <script>
+      let n = 5;
+      let k = 1;
+      for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= n; j++) {
+          document.write(k + ' ');
+          k++;
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (7)</h1>
+    <br />
+    <script>
+      let bar = 5;
+      let x = 1;
+
+      for (let i = 1; i <= bar; i++) {
+        for (let j = 1; j <= bar; j++) {
+          document.write(x, '  ');
+          x += 2;
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (8)</h1>
+    <br />
+    <script>
+      let row = 5;
+      let col = 2;
+
+      for (let i = 1; i <= row; i++) {
+        for (let j = 1; j <= row; j++) {
+          document.write(col, '  ');
+          col += 2;
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (9)</h1>
+    <br />
+    <script>
+      let init = 5;
+      for (let i = 1; i <= init; i++) {
+        for (let j = 1; j <= init; j++) {
+          document.write('  ', i * j);
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (10)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 3; j++) {
+          document.write(j + ' ' + i + ' ');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (11)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 3; j++) {
+          document.write(i + ' ' + j + ' ');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (12)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let x;
+
+        for (let i = 1; i <= n; i++) {
+          x = i;
+          for (let j = 1; j <= n; j++) {
+            document.write(' ', x);
+            x += n;
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (13)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let x;
+        let y;
+
+        for (let i = 1; i <= n; i++) {
+          x = i;
+          y = n - i + 1;
+          for (let j = 1; j <= n; j++) {
+            if (j % 2 == 1) {
+              document.write(' ', x);
+            } else {
+              document.write(' ', y);
+            }
+            x = x + n;
+            y = y + n;
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (14)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let x;
+        for (let i = 1; i <= n; i++) {
+          x = n - i + 1;
+          for (let j = 1; j <= n; j++) {
+            document.writeln('', x);
+            x = x + n;
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (15)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let x;
+        let y;
+
+        for (let i = 1; i <= n; i++) {
+          x = i;
+          y = n - i + 1;
+          for (let j = 1; j <= n; j++) {
+            if (j % 2 == 0) {
+              document.write(' ', x);
+            } else {
+              document.write(' ', y);
+            }
+            x = x + n;
+            y = y + n;
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (16)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            document.writeln(i + j - 1 + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (17)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            document.writeln('', 2 * (i + j) - 3);
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (18)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            document.writeln(((i + j) % 2) + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (19)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 0; j <= 4; j++) {
+          document.writeln(((i + j) % 2) + '');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (20)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            document.writeln(((i * j) % 2) + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (21)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        for (let i = 1; i <= n; i++) {
+          for (let j = 0; j < n; j++) {
+            document.write(((i * j) % 2) + ' ');
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (22)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 0; i < n; i++) {
+          for (let j = 1; j <= n; j++) {
+            document.write((i % 2) + ' ');
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (23)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            document.write((i % 2) + ' ');
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (24)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 0; j < n; j++) {
+            document.write((j % 2) + ' ');
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (25)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            document.write((j % 2) + ' ');
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (26)</h1>
+    <br />
+    <script>
+      let i;
+      let j;
+      //huruf ('A' memiliki nilai ASCII 65, 'B' memiliki nilai ASCII 66, dst.)
+      for (i = 65; i <= 69; i++) {
+        for (j = 65; j <= 69; j++) {
+          document.writeln(String.fromCharCode(i));
+        }
+        document.writeln('<br>');
+      }
+      //String.fromCharCode()  untuk mengkonversi nilai ASCII Kembali menjadi Char atau karakter
+    </script>
+    <h1>Hasil Pattern Js (27)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let i;
+        let j;
+        //huruf ('A' memiliki nilai ASCII 65, 'B' memiliki nilai ASCII 66,dst)
+        for (i = 65; i <= 69; i++) {
+          for (j = 65; j <= 69; j++) {
+            document.writeln(String.fromCharCode(j));
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (28)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let i;
+        let j;
+
+        for (i = 69; i >= 65; i--) {
+          for (j = 69; j >= 65; j--) {
+            document.writeln(String.fromCharCode(i));
+          }
+          document.writeln('<br>');
+        }
+        //String.fromCharCode()  untuk mengkonversi nilai ASCII Kembali menjadi Char atau karakter
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (29)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let i;
+        let j;
+
+        for (i = 69; i >= 65; i--) {
+          for (j = 69; j >= 65; j--) {
+            document.writeln(String.fromCharCode(j));
+          }
+          document.writeln('<br>');
+          //String.fromCharCode()  untuk mengkonversi nilai ASCII Kembali menjadi Char atau karakter
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (30)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let counter = 65;
+
+        for (let i = 1; i <= n; i++) {
+          let line = '';
+          for (let j = 1; j <= n; j++) {
+            line += String.fromCharCode(counter) + ' ';
+            counter++;
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (31)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 0; i < n; i++) {
+          let line = '';
+          for (let j = 0; j < n; j++) {
+            line += String.fromCharCode(65 + i + j) + ' ';
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (32)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        let x;
+        for (let i = 0; i < n; i++) {
+          x = i;
+          for (let j = 1; j <= n; j++) {
+            x += n;
+            document.writeln(String.fromCharCode(x - n + 65) + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (33)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        let x;
+        for (let i = 1; i <= n; i++) {
+          x = n - i;
+          for (let j = 1; j <= n; j++) {
+            document.writeln(String.fromCharCode(65 + x) + '');
+            x = x + n;
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (34)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        for (let i = 1; i <= 5; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.writeln('*');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (35)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.writeln(i);
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (36)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.writeln(j);
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (37)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        for (let i = n; i >= 1; i--) {
+          for (let j = n; j >= i; j--) {
+            document.writeln(i + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (38)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        for (let i = n; i >= 1; i--) {
+          for (let j = n; j >= i; j--) {
+            document.writeln(j + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (39)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        for (let i = n; i >= 1; i--) {
+          for (let j = i; j <= n; j++) {
+            document.writeln(j + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (40)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.writeln(j * 2 + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (41)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 1;
+        let i;
+        let j;
+        for (i = 1; i <= 4; i++) {
+          for (j = 1; j <= i; j++) {
+            document.writeln(n);
+            n++;
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (42)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.writeln(i + j - 1 + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (43)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        let t = i - 1;
+        for (let j = 1; j <= i; j++) {
+          document.writeln(t + i + '');
+          t += 2;
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (44)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let i;
+        let j;
+        let k = 0;
+        let n = 4; //ukuran
+
+        for (i = 1; i <= n; i++) {
+          k += i;
+          for (j = k; j > k - i; j--) {
+            document.writeln(j);
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (45)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let x = 1;
+        let n = 5;
+
+        for (let i = n; i >= 1; i--) {
+          for (j = n; j >= i; j--) {
+            document.writeln('', x);
+            x += 2;
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (46)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let x = 2;
+        let n = 5;
+
+        for (let i = n; i >= 1; i--) {
+          for (j = n; j >= i; j--) {
+            document.writeln('', x);
+            x += 2;
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (47)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (j = 1; j <= i; j++) {
+            document.writeln('', i * j);
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (48)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        let x = 1;
+        let y;
+        let t;
+        for (let i = n; i >= 1; i--) {
+          y = i;
+          t = x;
+          for (j = n; j >= i; j--) {
+            document.writeln('', t);
+            t = t - y;
+            y++;
+          }
+          x = x + i;
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (49)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let x = 1;
+        let y = n;
+        let t1;
+        let t2;
+        let r1;
+        let r2;
+        for (let i = n; i >= 1; i--) {
+          t1 = x;
+          t2 = y;
+          r1 = i;
+          r2 = i + 1;
+
+          for (j = n; j >= i; j--) {
+            if ((i + j) % 2 == 0) {
+              document.write(' ', t1);
+            } else {
+              document.write(' ', t2);
+            }
+            t1 = t1 - r1++;
+            t2 = t2 - r2++;
+          }
+          y = y + i - 1;
+          x = x + i;
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (50)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        let x = 1;
+        let y = n;
+        let t1;
+        let t2;
+        let r1;
+        let r2;
+
+        for (let i = n; i >= 1; i--) {
+          t1 = x;
+          t2 = y;
+          r1 = i;
+          r2 = i + 1;
+
+          for (j = n; j >= i; j--) {
+            if ((i + j) % 2 == 1) {
+              document.write(' ', t1);
+            } else {
+              document.write(' ', t2);
+            }
+            t1 = t1 - r1++;
+            t2 = t2 - r2++;
+          }
+          y = y + i - 1;
+          x = x + i;
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (51)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        let x = (n * (n + 1)) / 2;
+
+        for (let i = n; i >= 1; i--) {
+          for (let j = n; j >= i; j--) {
+            document.write(' ', x--);
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (52)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        let x = n;
+        let y;
+        let t;
+
+        for (let i = n; i >= 1; i--) {
+          t = x;
+          y = i + 1;
+          for (let j = n; j >= i; j--) {
+            document.write(' ', t);
+            t = t - y;
+            y++;
+          }
+          x = x + i - 1;
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (53)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        let px;
+
+        for (let i = 1; i <= n; i++) {
+          px = 1;
+          for (let j = 1; j <= i; j++) {
+            document.write(px, ' ');
+            px = (px * (i - j)) / j;
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (54)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        let x = 1;
+
+        for (let i = 0; i < n; i++) {
+          for (let j = 0; j <= i; j++) {
+            document.write(x - i + ' ');
+            x++;
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (55)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 4;
+        let x = 1;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.write('  ', x * x);
+            x++;
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (56)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let i;
+        let j;
+        let k;
+
+        for (i = 1; i <= n; i++) {
+          k = i;
+          for (j = 1; j <= i; j++) {
+            document.writeln(k);
+            k = k + (n - j);
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (57)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let i;
+        let j;
+        let n1 = 0;
+        let n2 = 1;
+        let r = n1 + n2;
+        for (i = 1; i <= 5; i++) {
+          for (j = 1; j <= i; j++) {
+            document.writeln(r);
+            r = n1 + n2;
+            n1 = n2;
+            n2 = r;
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (58)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let firstNum = 0,
+          secondNum = 1,
+          result = 0;
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= i; j++) {
+            firstNum = secondNum;
+            secondNum = result;
+            document.writeln(result + '');
+            result = firstNum + secondNum;
+          }
+          firstNum = 0;
+          secondNum = 1;
+          result = 0;
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (59)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.writeln((i % 2) + '');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (60)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 0; i <= n; i++) {
+          for (let j = 0; j <= i; j++) {
+            document.writeln(i % 2) + '';
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (61)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.write((j % 2) + ' ');
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (62)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 0; i <= n; i++) {
+          for (let j = 0; j <= i; j++) {
+            document.write((j % 2) + ' ');
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (63)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.write(((i + j) % 2) + ' ');
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (64)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 0; j < i; j++) {
+            document.write(((i + j) % 2) + ' ');
+          }
+          document.write('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (65)</h1>
+    <br />
+    <script>
+      for (let i = 65; i <= 69; i++) {
+        let line = '';
+        for (let j = 65; j <= i; j++) {
+          line += String.fromCharCode(i);
+        }
+        document.writeln(line + '<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (66)</h1>
+    <br />
+    <script>
+      for (let i = 65; i <= 69; i++) {
+        let line = '';
+        for (let j = 65; j <= i; j++) {
+          line += String.fromCharCode(j);
+        }
+        document.writeln(line + '<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (67)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let a1 = 65;
+
+        for (let i = n - 1; i >= 0; i--) {
+          let line = '';
+          for (let j = n - 1; j >= i; j--) {
+            line += String.fromCharCode(j + a1);
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (68)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let a1 = 65;
+
+        for (let i = n - 1; i >= 0; i--) {
+          let line = '';
+          for (let j = n - 1; j >= i; j--) {
+            line += String.fromCharCode(i + a1);
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (69)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let a1 = 65;
+
+        for (let i = 0; i < n; i++) {
+          let line = '';
+          for (let j = i; j >= 0; j--) {
+            line += String.fromCharCode(j + a1);
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (70)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= i; j--) {
+          document.write('*');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (71)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= i; j--) {
+          document.write(i, ' ');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (72)</h1>
+    <br />
+    <script>
+      for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+          document.write(j, ' ');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (73)</h1>
+    <br />
+    <script>
+      for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+          document.write(i, ' ');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (74)</h1>
+    <br />
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= i; j--) {
+          document.write(j, ' ');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+    <h1>Hasil Pattern Js (75)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n - i + 1; j++) {
+            document.write(n - j + i + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (76)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n - i + 1; j++) {
+            document.write(n - i + j + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (77)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let k = 1;
+
+        for (let i = n; i >= 1; i--) {
+          for (let j = 1; j <= i; j++) {
+            document.write(' ', k);
+            k++;
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (78)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        let x = (n * (n + 1)) / 2;
+        for (let i = 1; i <= n; i++) {
+          for (let j = n; j >= i; j--) {
+            document.write(' ', x--);
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (69)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let i;
+        let j;
+        let k;
+        let d1 = 1; //untuk mencetak
+        let n = 4; //untuk ukuran
+        let d2 = n * n + 1;
+        for (i = n; i >= 1; i--) {
+          // untuk dua string kosong
+          for (k = 1; k <= i; k++) {
+            document.write(d2 + ' ');
+            d2++; //increment d2
+          }
+          d2--; // decrement d2
+
+          d2 = d2 - (i - 1) * 2; //cetak value
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (80)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //untuk ukuran
+        let k;
+        for (i = n; i >= 1; i--) {
+          k = i;
+          for (j = 1; j <= i; j++) {
+            document.write(' ', k);
+            k = k + (n - j);
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (81)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //untuk ukuran
+        for (i = 1; i <= n; i++) {
+          for (j = n; j >= i; j--) {
+            document.write((i % 2) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (82)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //untuk ukuran
+        for (i = 0; i <= n; i++) {
+          for (j = n; j > i; j--) {
+            document.write((i % 2) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (83)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //untuk ukuran
+        for (i = n; i >= 1; i--) {
+          for (j = 1; j <= i; j++) {
+            document.write((j % 2) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (84)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //untuk ukuran
+        for (i = n; i >= 1; i--) {
+          for (j = 0; j < i; j++) {
+            document.write((j % 2) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (85)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //untuk ukuran
+        for (i = n; i >= 1; i--) {
+          for (j = 1; j <= i; j++) {
+            document.write(((i + j) % 2) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (86)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //untuk ukuran
+        for (i = n; i >= 1; i--) {
+          for (j = 0; j < i; j++) {
+            document.write(((i + j) % 2) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (87)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let char = 65; //mencetak ACCII dari String
+        for (let i = 0; i <= 4; i++) {
+          for (let j = 4; j >= i; j--) {
+            document.write(String.fromCharCode(i + char) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (88)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let char = 65; //mencetak ACCII dari String
+        for (let i = 4; i >= 0; i--) {
+          for (let j = 0; j <= i; j++) {
+            document.write(String.fromCharCode(j + char) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (89)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let char = 65; //mencetak ACCII dari String
+        for (let i = 4; i >= 0; i--) {
+          for (let j = 0; j <= i; j++) {
+            document.write(String.fromCharCode(i + char) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (90)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let char = 65; //mencetak ACCII dari String
+        for (let i = 0; i <= 4; i++) {
+          for (let j = 4; j >= i; j--) {
+            document.write(String.fromCharCode(j + char) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (91)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //ukuran
+        let char = 65; //mencetak ACCII dari String
+        for (let i = 1; i <= n; i++) {
+          for (let j = n - i; j >= 0; j--) {
+            document.write(String.fromCharCode(j + char) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (92)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //ukuran
+        let char = 64; //mencetak ACCII dari String
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n - i + 1; j++) {
+            document.write(String.fromCharCode(n - j + i + char) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (93)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //ukuran
+        let char = 64; //mencetak ACCII dari String
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n - i + 1; j++) {
+            document.write(String.fromCharCode(n - i + j + char) + ' ');
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (94)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5; //ukuran
+        let char = 65; //mencetak ACCII dari String
+        let char2 = 90;
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.write(String.fromCharCode(char) + ' ');
+            if (char < char2) {
+              char++;
+            } else {
+              char = 65;
+              // reset char
+            }
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (95)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        for (let i = 1; i <= n; i++) {
+          let line = '';
+          // Menambahkan spasi
+          for (let j = n - 1; j >= i; j--) {
+            line += '&nbsp;' + '&nbsp;' + '&nbsp;';
+          }
+          for (let k = 1; k <= i; k++) {
+            line += '*' + ' ';
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (96)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        for (let i = 1; i <= n; i++) {
+          let line = '';
+          // Menambahkan spasi
+          for (let j = n - 1; j >= i; j--) {
+            line += '&nbsp' + ' ' + ' ';
+          }
+          for (let k = 1; k <= i; k++) {
+            line += i;
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (97)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+        for (let i = 1; i <= n; i++) {
+          let line = '';
+          // Menambahkan spasi
+          for (let j = n - 1; j >= i; j--) {
+            line += '&nbsp' + ' ';
+          }
+          for (let k = 1; k <= i; k++) {
+            line += k;
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (98)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = n; i >= 1; i--) {
+          let line = '';
+          // Menambahkan spasi di awal setiap baris
+          for (let j = 1; j < i; j++) {
+            line += '&nbsp;&nbsp;' + ' ';
+          }
+          // Menambahkan angka yang berurutan dalam baris
+          for (let k = i; k <= n; k++) {
+            line += i + ' ';
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (99)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = n; i >= 1; i--) {
+          let line = '';
+          // Menambahkan spasi di awal setiap baris
+          for (let j = 1; j < i; j++) {
+            line += '&nbsp;&nbsp;' + ' ';
+          }
+          // Menambahkan angka yang berurutan dalam baris
+          for (let k = i; k <= n; k++) {
+            line += k + ' ';
+          }
+          document.writeln(line + '<br>');
+        }
+      }
+      globalRows();
+    </script>
+    <h1>Hasil Pattern Js (100)</h1>
+    <br />
+    <script>
+      function globalRows() {
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = n; j >= 1; j--) {
+            if (i >= j) {
+              document.writeln(j);
+            } else {
+              document.writeln('&nbsp;&nbsp;' + ' ');
+            }
+          }
+          document.writeln('<br>');
+        }
+      }
+      globalRows();
+    </script>
+  </body>
+</html>

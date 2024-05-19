@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>156</title>
+</head>
+<body>
+    <script>
+        let m = 1;
+
+        let tinggi = 5; //nilai untuk ukuran piramid
+
+        let jarak = tinggi - 1;
+
+        let i;
+        let j;
+        let k;
+
+        for(i = 0; i < tinggi; i++){
+            for(j = jarak; j > i; j--){
+                document.writeln("&nbsp&nbsp");
+            }
+            for(k = 0; k < m; k++){
+                document.writeln((String.fromCharCode)(i + 65));
+            }
+            m += 2;
+            document.writeln("<br>");
+        }
+    </script>
+</body>
+</html>

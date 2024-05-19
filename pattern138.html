@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>138</title>
+  </head>
+  <body>
+    <script>
+      let i;
+      let j;
+      let k;
+
+      for (i = 4; i >= 0; i--) {
+        for (k = 3; k >= i; k--) {
+          document.writeln('&nbsp&nbsp');
+        }
+        for (j = i; j >= 0; j--) {
+          document.writeln(String.fromCharCode((i - j) + 65));
+          document.writeln('&nbsp&nbsp');
+        }
+        document.writeln('<br>');
+      }
+    </script>
+  </body>
+</html>
